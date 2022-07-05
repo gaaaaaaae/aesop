@@ -9,7 +9,7 @@ $(function(){
   //수량감소
   $(".arrowBtn > .down").click(function(){
     num--;
-    if(num <= 0){num = 0}
+    if(num <= 1){num = 1}
     $(".num").attr("value",num);
   });
 
@@ -42,6 +42,6 @@ $(function(){
 
   //top버튼 클릭시
   $(".topbtn").click(function(){
-    $(window).scrollTop(0);//window객체의 스크롤위치값을 0(페이지상단)으로 설정
+    $(window).scrollTop(0);//window객체의 스크롤위치값을 페이지상단으로 설정
   })
 });

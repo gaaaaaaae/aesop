@@ -26,7 +26,7 @@ html,body{
   color:#8b6d60;
   cursor:pointer;
   background-color:transparent;
-  display:none;/*버튼을 화면에서 제거*/
+  display:none;
 }
 .topbtn:hover{
   color:rosybrown;
@@ -314,7 +314,6 @@ section>hr{
   text-decoration:underline;
 }
 
-
 .pairing .perfumeDrag{
   width:100%;
   height:250px;
@@ -330,15 +329,15 @@ section>hr{
 /*스크롤바 css*/
 .perfumeDrag::-webkit-scrollbar{
   width:1px;
-  height:5px;  /* 스크롤바의 너비 */
+  height:5px;
 }
 .perfumeDrag::-webkit-scrollbar-thumb{
   width:1px;
-  height:1px; /* 스크롤바의 길이 */
-  background:#555 /* 스크롤바의 색상 */
+  height:1px;
+  background:#555;
 }
 .perfumeDrag::-webkit-scrollbar-track{
-  background:#b7b7b7;/*스크롤바 뒷 배경 색상*/
+  background:#b7b7b7;
 }
 
 .pairing .myPair #scrollBar{

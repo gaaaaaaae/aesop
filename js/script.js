@@ -19,14 +19,11 @@ $(function(){
   //수량감소
   $(".arrowBtn > .down").click(function(){
     num--;
-    if(num <= 0){num = 0}
+    if(num <= 1){num = 1}
     $(".num").attr("value",num);
   });
 
   //pairing 드래그
-  //#bar를 x축으로만 드래그 할 수 있도록 한다. 그 범위는 #bar의 부모크기 만큼만 가능
- 
-
   $(".perfumeDrag").on("mousewheel",function(e){
     e.preventDefault();//window의 마우스휠이벤트를 제거
     var delta = e.originalEvent.deltaY //휠을 위로 올리면 -100반환, 밑으로 내리면 100을 반환
@@ -40,12 +37,5 @@ $(function(){
       drag.scrollLeft = pos//drag요소의 스크롤을 -40px만큼 이동시키는 코드
     }
   })
-
-  /*
-    비례식
-    pos를 좌변에 두고 나머지를 모두 우변에 두는 과정
-    (570-0):(barLeft-0) = (max-min):(pos-min)
-    barLeft*(max-min) = 570*(pos-min)
-    (barLeft*(max-min))/570+min
-  */
+  
 });
